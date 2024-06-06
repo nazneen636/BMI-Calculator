@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(239, 209, 148), rgb(148, 199, 239));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.display-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: green;
+    color: #ffffff;
+    border-radius: 10px;
+    transition: all linear .4s;
+}
+.btn:hover{
+    box-shadow: 2px 4px 14px rgb(17, 10, 10);
+}
+
+.male .btn:hover, .female .btn:hover{
+    box-shadow: 4px 4px 14px rgb(215, 206, 206);
+    background-color: transparent;
+}
+.male, .female{
+    display: none;
+    background-color: black;
+    box-shadow: 2px 4px 20px rgb(68, 54, 54);
+    border-radius: 10px;
+    padding: 30px 20px;
+    min-width: 600px;
+}
+/* ============================================= */
+.heading{
+    color: rgb(67, 5, 67);
+    font-size: 60px;
+    margin-bottom: 30px;
+}
+.btn-div{
+    display: flex;
+    column-gap: 30px;
+}
+.name{
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.input-field{
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 1px solid rgb(236, 226, 226);
+    outline: 0;
+}
+.male .height, .male .weight, .female  .height, .female .weight, .male .btn-div, .female .btn-div{
+    width: 90%;
+}
+.male .btn, .female .btn{
+    width: 50%;
+}
+.male .btn-div, .female .btn-div{
+    margin-top: 25px;
+}
+.height, .weight{
+    position: relative;
+    padding: 18px 0;
+}
+.height .heightError, .weight .weightError {
+    position: absolute;
+    top: 81%;
+    left: 10px;
+    color: rgb(215, 42, 42);
+    font-size: 21px;
+}
+.result{
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 700;
+}

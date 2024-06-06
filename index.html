@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<!--firstPage=========================== -->
+    <div class="firstPage display-column">
+        <div class="display-column">
+            <h1 class="heading">BMI Calculator</h1>
+            <div class="btn-div">
+                <button class="maleBtn btn">Male</button>
+                <button class="femaleBtn btn">Female</button>
+            </div>
+        </div>
+    </div>
+
+<!-- male=========================== -->
+        <div class="male">
+            <div class="display-column">
+                <h2 class="name">Male</h2>
+                <div class="height">
+                    <input type="text" placeholder="Enter your height (Inch)" class="input-field" id="maleHeight">
+                    <p class="heightError"></p>
+                </div>
+                <div class="weight">
+                    <input type="text" placeholder="Enter your weight (KG)" class="input-field" id="maleWeight">
+                    <p class="weightError"></p>
+                </div>
+                <div class="btn-div">
+                    <button class="male-calculate-btn btn">Calculate</button>
+                    <button class="male-home-btn btn">Home</button>
+                </div>
+                <div class="result-div">
+                    <p class="result"></p>
+                </div>
+            </div>
+        </div>
+<!-- female=========================== -->
+        <div class="female">
+            <div class="display-column">
+                <h2 class="name">Female</h2>
+                <div class="height">
+                    <input type="text" placeholder="Enter your height (Inch)" class="input-field" id="femaleHeight">
+                    <p class="heightError fh-error"></p>
+                </div>
+                <div class="weight">
+                    <input type="text" placeholder="Enter your weight (KG)" class="input-field" id="femaleWeight">
+                    <p class="weightError fw-error"></p>
+                </div>
+                <div class="btn-div">
+                    <button class="female-calculate-btn btn">Calculate</button>
+                    <button class="female-home-btn btn">Home</button>
+                </div>
+                <div class="result-div">
+                    <p class="result female-result"></p>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
